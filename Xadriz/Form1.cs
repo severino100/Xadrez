@@ -696,11 +696,6 @@ namespace Xadriz
             }*/
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             Jogador2.Text = textBox1.Text;
