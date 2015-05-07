@@ -33,6 +33,8 @@ namespace Xadriz
 
         Guardar g = new Guardar();
 
+        Xeque x = new Xeque();
+
         private bool turnos = false;
 
         public Form1()
@@ -576,6 +578,10 @@ namespace Xadriz
                 {
                     Jogador2.ForeColor = Color.Gray;
                     Jogador1.ForeColor = Color.Green;
+                }
+                if (x.xequie(selecionado, ((Panel)sender), turnos, pecas))
+                {
+                    MessageBox.Show("-----------------XEQUE---------------");
                 }
                 selecionado = null;
            }
