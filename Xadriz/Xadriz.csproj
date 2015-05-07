@@ -60,6 +60,7 @@
     <Compile Include="Rainha.cs" />
     <Compile Include="Rei.cs" />
     <Compile Include="Torre.cs" />
+    <Compile Include="Xeque.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

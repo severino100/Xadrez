@@ -33,6 +33,8 @@ namespace Xadriz
 
         Guardar g = new Guardar();
 
+        Xeque x = new Xeque();
+
         private bool turnos = false;
 
         public Form1()
@@ -231,6 +233,7 @@ namespace Xadriz
             }
             else
             {//ent joga e desseleciona
+                
                 switch(selecionado.Name)
                 {
                     case "PeaoMadeira":
@@ -566,6 +569,7 @@ namespace Xadriz
                         selecionado = (Panel)sender;
                         break;
                 }
+
                 if(turnos == true)
                 {
                     Jogador2.ForeColor = Color.Green;
@@ -576,6 +580,10 @@ namespace Xadriz
                 {
                     Jogador2.ForeColor = Color.Gray;
                     Jogador1.ForeColor = Color.Green;
+                }
+                if (x.xequie(selecionado, ((Panel)sender), turnos, pecas))
+                {
+                    MessageBox.Show("tas em xaque");
                 }
                 selecionado = null;
            }
