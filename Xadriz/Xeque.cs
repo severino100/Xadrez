@@ -29,6 +29,7 @@ namespace Xadriz
                 {
                     foreach (Panel procuraPeaoPapel in pecas)
                     {
+                        //Peona
                         if (procuraPeaoPapel.Name == "PeaoMadeira")
                         {
                             if (procuraPeaoPapel.Location.Y == rei.Location.Y - 58) // Peao esquerda e direita
@@ -102,8 +103,67 @@ namespace Xadriz
                                     return true;
                                 }
                             }
+                            
+                        }
+                        
+                        
+                    }
+
+                    //------------------------------------------------------------------------------------------------
+                    //VERIFICAR CIMA
+                    for (int i = rei.Location.Y; i >= 62; i = i -58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.X == rei.Location.X)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.Y == i)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if(procuraPeaoPapel.Name == "TorreMadeira" || procuraPeaoPapel.Name == "RainhaMadeira")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiPapel" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        i = 0;
+                                    }
+                                }
+                            }
                         }
                     }
+                    //--------------------------------------------------------------------------------------------
+                    //VERIFICAR BAIXO
+                    for (int i = rei.Location.Y; i <= 561; i = i + 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.X == rei.Location.X)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.Y == i)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "TorreMadeira" || procuraPeaoPapel.Name == "RainhaMadeira")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiPapel" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        i = 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //--------------------------------------------------------------------------------------------
                 }
                 else if (rei.Name == "ReiMadeira")
                 {
