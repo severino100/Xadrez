@@ -233,6 +233,7 @@ namespace Xadriz
             }
             else
             {//ent joga e desseleciona
+                
                 switch(selecionado.Name)
                 {
                     case "PeaoMadeira":
@@ -568,6 +569,7 @@ namespace Xadriz
                         selecionado = (Panel)sender;
                         break;
                 }
+
                 if(turnos == true)
                 {
                     Jogador2.ForeColor = Color.Green;
