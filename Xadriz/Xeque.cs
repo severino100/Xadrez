@@ -164,7 +164,184 @@ namespace Xadriz
                         }
                     }
                     //--------------------------------------------------------------------------------------------
+                    //------------------------------------------------------------------------------------------------
+                    //VERIFICAR esquerda
+                    for (int i = rei.Location.X; i >= 111; i = i - 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.Y == rei.Location.Y)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.X == i)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "TorreMadeira" || procuraPeaoPapel.Name == "RainhaMadeira")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiPapel" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        i = 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //--------------------------------------------------------------------------------------------
+                    //VERIFICAR direita
+                    for (int i = rei.Location.X; i <= 517; i = i + 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.Y == rei.Location.Y)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.X == i)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "TorreMadeira" || procuraPeaoPapel.Name == "RainhaMadeira")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiPapel" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        i = 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //------------------------BISPO----------------------------------------
+                    //cima direitra
+                    for (int ix = rei.Location.X, iy = rei.Location.Y; ix <= 517 && iy >= 62; ix = ix + 58, iy = iy - 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.Y == iy)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.X == ix)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "BispoMadeira" || procuraPeaoPapel.Name == "RainhaMadeira")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiPapel" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        ix = 600;
+                                        iy = 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //cikma esuqrdxa
+                    for (int ix = rei.Location.X, iy = rei.Location.Y; ix >= 111 && iy >= 62; ix = ix - 58, iy = iy - 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.Y == iy)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.X == ix)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "BispoMadeira" || procuraPeaoPapel.Name == "RainhaMadeira")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiPapel" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        ix = 600;
+                                        iy = 0;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                    //blaixo direitra
+                    for (int ix = rei.Location.X, iy = rei.Location.Y; ix <= 517 && iy <= 561; ix = ix + 58, iy = iy + 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.Y == iy)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.X == ix)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "BispoMadeira" || procuraPeaoPapel.Name == "RainhaMadeira")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiPapel" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        ix = 600;
+                                        iy = 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //baico esuqrdxa
+                    for (int ix = rei.Location.X, iy = rei.Location.Y; ix >= 111 && iy <= 561; ix = ix - 58, iy = iy + 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.Y == iy)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.X == ix)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "BispoMadeira" || procuraPeaoPapel.Name == "RainhaMadeira")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiPapel" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        ix = 600;
+                                        iy = 0;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
                 }
+
+
+
+
+
+
+
+
+
+
+
                 else if (rei.Name == "ReiMadeira")
                 {
                     foreach (Panel procuraPeaoMadeira in pecas)
@@ -240,6 +417,232 @@ namespace Xadriz
                                 if (procuraPeaoMadeira.Location.Y == rei.Location.Y + 58)//Cavlo baixo esquerda
                                 {
                                     return true;
+                                }
+                            }
+                        }
+
+                    }
+
+
+
+
+
+                    //------------------------------------------------------------------------------------------------
+                    //VERIFICAR CIMA
+                    for (int i = rei.Location.Y; i >= 62; i = i - 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.X == rei.Location.X)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.Y == i)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "TorrePapel" || procuraPeaoPapel.Name == "RainhaPapel")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiMadeira" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        i = 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //--------------------------------------------------------------------------------------------
+                    //VERIFICAR BAIXO
+                    for (int i = rei.Location.Y; i <= 561; i = i + 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.X == rei.Location.X)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.Y == i)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "TorrePapel" || procuraPeaoPapel.Name == "RainhaPapel")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiMadeira" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        i = 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //--------------------------------------------------------------------------------------------
+                    //------------------------------------------------------------------------------------------------
+                    //VERIFICAR esquerda
+                    for (int i = rei.Location.X; i >= 111; i = i - 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.Y == rei.Location.Y)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.X == i)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "TorrePapel" || procuraPeaoPapel.Name == "RainhaPapel")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiMadeira" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        i = 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //--------------------------------------------------------------------------------------------
+                    //VERIFICAR direita
+                    for (int i = rei.Location.X; i <= 517; i = i + 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.Y == rei.Location.Y)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.X == i)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "TorrePapel" || procuraPeaoPapel.Name == "RainhaPapel")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiMadeira" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        i = 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //------------------------BISPO----------------------------------------
+                    //cima direitra
+                    for (int ix = rei.Location.X, iy = rei.Location.Y; ix <= 517 && iy >= 62; ix = ix + 58, iy = iy - 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.Y == iy)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.X == ix)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "BispoPapel" || procuraPeaoPapel.Name == "RainhaPapel")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiMadeira" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        ix = 600;
+                                        iy = 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //cikma esuqrdxa
+                    for (int ix = rei.Location.X, iy = rei.Location.Y; ix >= 111 && iy >= 62; ix = ix - 58, iy = iy - 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.Y == iy)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.X == ix)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "BispoPapel" || procuraPeaoPapel.Name == "RainhaPapel")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiMadeira" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        ix = 600;
+                                        iy = 0;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                    //blaixo direitra
+                    for (int ix = rei.Location.X, iy = rei.Location.Y; ix <= 517 && iy <= 561; ix = ix + 58, iy = iy + 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.Y == iy)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.X == ix)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "BispoPapel" || procuraPeaoPapel.Name == "RainhaPapel")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiMadeira" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        ix = 600;
+                                        iy = 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //baico esuqrdxa
+                    for (int ix = rei.Location.X, iy = rei.Location.Y; ix >= 111 && iy <= 561; ix = ix - 58, iy = iy + 58)
+                    {
+                        foreach (Panel procuraPeaoPapel in pecas)
+                        {
+                            if (procuraPeaoPapel.Location.Y == iy)//Se esta na mesma linha
+                            {
+                                if (procuraPeaoPapel.Location.X == ix)//posicao a ser analisada
+                                {
+                                    //MessageBox.Show(procuraPeaoPapel.Name);
+                                    if (procuraPeaoPapel.Name == "BispoPapel" || procuraPeaoPapel.Name == "RainhaPapel")
+                                    {
+                                        return true;
+                                    }
+                                    else if (procuraPeaoPapel.Name == "ReiMadeira" || procuraPeaoPapel.Name == "Vazio")
+                                    {
+                                        //nada!
+                                    }
+                                    else
+                                    {
+                                        ix = 600;
+                                        iy = 0;
+                                    }
                                 }
                             }
                         }
