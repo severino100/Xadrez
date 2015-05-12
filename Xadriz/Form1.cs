@@ -212,6 +212,8 @@ namespace Xadriz
             pnF8.Name = "Vazio";
 
 
+
+
         }
 
 
@@ -243,6 +245,14 @@ namespace Xadriz
                             Jogador1.ForeColor = Color.Gray;
                             if (p.jogar(selecionado.Location, ((Panel)sender).Location, selecionado.Name, ((Panel)sender).Name, pecas))
                             {
+                                if (((Panel)sender).Name != "Vazio")
+                                {
+                                    Comidas.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
+                                if (((Panel)sender).Name == "Vazio")
+                                {
+                                    jogadasCima.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -257,6 +267,7 @@ namespace Xadriz
                                 sb2.Visible = true;
                                 sb3.Visible = true;
 
+                                
 
                             }
                         }
@@ -274,6 +285,14 @@ namespace Xadriz
                             //MessageBox.Show(selecionado.Location.ToString() + ((Panel)sender).Location.ToString());
                             if (p.jogar(selecionado.Location, ((Panel)sender).Location, selecionado.Name,((Panel)sender).Name, pecas))
                             {
+                                if (((Panel)sender).Name != "Vazio")
+                                {
+                                    ComidasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
+                                if (((Panel)sender).Name == "Vazio")
+                                {
+                                    jogadasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -304,6 +323,14 @@ namespace Xadriz
                         {
                             if (t.jogar(selecionado.Location, ((Panel)sender).Location, selecionado.Name, ((Panel)sender).Name, pecas))
                             {
+                                if (((Panel)sender).Name != "Vazio")
+                                {
+                                    Comidas.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
+                                if (((Panel)sender).Name == "Vazio")
+                                {
+                                    jogadasCima.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -330,6 +357,14 @@ namespace Xadriz
                         {
                             if (t.jogar(selecionado.Location, ((Panel)sender).Location,selecionado.Name,((Panel)sender).Name, pecas))
                             {
+                                if (((Panel)sender).Name != "Vazio")
+                                {
+                                    ComidasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
+                                if (((Panel)sender).Name == "Vazio")
+                                {
+                                    jogadasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -356,6 +391,14 @@ namespace Xadriz
                         {
                             if (c.jogar(selecionado.Location, ((Panel)sender).Location, selecionado.Name,((Panel)sender).Name, pecas))
                             {
+                                if (((Panel)sender).Name != "Vazio")
+                                {
+                                    Comidas.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
+                                if (((Panel)sender).Name == "Vazio")
+                                {
+                                    jogadasCima.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -382,6 +425,14 @@ namespace Xadriz
                         {
                             if (c.jogar(selecionado.Location, ((Panel)sender).Location, selecionado.Name,((Panel)sender).Name, pecas))
                             {
+                                if (((Panel)sender).Name != "Vazio")
+                                {
+                                    ComidasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
+                                if (((Panel)sender).Name == "Vazio")
+                                {
+                                    jogadasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -409,6 +460,14 @@ namespace Xadriz
                             //MessageBox.Show(selecionado.Location.ToString() + ((Panel)sender).Location.ToString());
                             if (b.jogar(selecionado.Location, ((Panel)sender).Location, selecionado.Name, ((Panel)sender).Name, pecas))
                             {
+                                if (((Panel)sender).Name != "Vazio")
+                                {
+                                    Comidas.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
+                                if (((Panel)sender).Name == "Vazio")
+                                {
+                                    jogadasCima.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -436,6 +495,14 @@ namespace Xadriz
                             //MessageBox.Show(selecionado.Location.ToString() + ((Panel)sender).Location.ToString());
                             if (b.jogar(selecionado.Location, ((Panel)sender).Location, selecionado.Name, ((Panel)sender).Name, pecas))
                             {
+                                if (((Panel)sender).Name != "Vazio")
+                                {
+                                    ComidasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
+                                if (((Panel)sender).Name == "Vazio")
+                                {
+                                    jogadasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -463,6 +530,14 @@ namespace Xadriz
                             //MessageBox.Show(selecionado.Location.ToString() + ((Panel)sender).Location.ToString());
                             if (rainha.jogar(selecionado.Location, ((Panel)sender).Location, selecionado.Name, ((Panel)sender).Name, pecas))
                             {
+                                if (((Panel)sender).Name != "Vazio")
+                                {
+                                    Comidas.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
+                                if (((Panel)sender).Name == "Vazio")
+                                {
+                                    jogadasCima.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -490,6 +565,14 @@ namespace Xadriz
                             //MessageBox.Show(selecionado.Location.ToString() + ((Panel)sender).Location.ToString());
                             if (rainha.jogar(selecionado.Location, ((Panel)sender).Location, selecionado.Name, ((Panel)sender).Name, pecas))
                             {
+                                if (((Panel)sender).Name != "Vazio")
+                                {
+                                    ComidasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
+                                if (((Panel)sender).Name == "Vazio")
+                                {
+                                    jogadasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -517,6 +600,14 @@ namespace Xadriz
                             //MessageBox.Show(selecionado.Location.ToString() + ((Panel)sender).Location.ToString());
                             if (rei.jogar(selecionado.Location, ((Panel)sender).Location,selecionado.Name,((Panel)sender).Name, pecas))
                             {
+                                if (((Panel)sender).Name != "Vazio")
+                                {
+                                    Comidas.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
+                                if (((Panel)sender).Name == "Vazio")
+                                {
+                                    jogadasCima.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -544,6 +635,14 @@ namespace Xadriz
                             //MessageBox.Show(selecionado.Location.ToString() + ((Panel)sender).Location.ToString());
                             if (rei.jogar(selecionado.Location, ((Panel)sender).Location,selecionado.Name,((Panel)sender).Name, pecas))
                             {
+                                if (((Panel)sender).Name != "Vazio")
+                                {
+                                    ComidasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
+                                if (((Panel)sender).Name == "Vazio")
+                                {
+                                    jogadasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                }
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -557,7 +656,10 @@ namespace Xadriz
                                 sb1.Visible = false;
                                 sb2.Visible = false;
                                 sb3.Visible = false;
+                                
+                                
                             }
+
                         }
                         else
                         {
@@ -569,7 +671,7 @@ namespace Xadriz
                         selecionado = (Panel)sender;
                         break;
                 }
-
+                
                 if(turnos == true)
                 {
                     Jogador2.ForeColor = Color.Green;
@@ -681,6 +783,30 @@ namespace Xadriz
             sb1.Visible = true;
             sb2.Visible = true;
             sb3.Visible = true;
+
+            textBox1.BackColor = Color.Green;
+
+
+            //----------------------------------------------------------------------
+            
+            //linha de baixo 1
+            pnA1.Visible = true;
+            pnA2.Visible = true;
+            pnA3.Visible = true;
+            pnA4.Visible = true;
+            pnA5.Visible = true;
+            pnA6.Visible = true;
+            pnA7.Visible = true;
+            pnA8.Visible = true;
+            //linha de baixo 2
+            pnB1.Visible = true;
+            pnB2.Visible = true;
+            pnB3.Visible = true;
+            pnB4.Visible = true;
+            pnB5.Visible = true;
+            pnB6.Visible = true;
+            pnB7.Visible = true;
+            pnB8.Visible = true;
         }
 
         private void verificarXeque()
@@ -710,6 +836,31 @@ namespace Xadriz
             textBox1.Visible = false;
             button2.Visible = false;
             Jogador2.Visible = true;
+
+            //linha de cima 1
+            pnH1.Visible = true;
+            pnH2.Visible = true;
+            pnH3.Visible = true;
+            pnH4.Visible = true;
+            pnH5.Visible = true;
+            pnH6.Visible = true;
+            pnH7.Visible = true;
+            pnH8.Visible = true;
+            //linha de cima 2
+            pnG1.Visible = true;
+            pnG2.Visible = true;
+            pnG3.Visible = true;
+            pnG4.Visible = true;
+            pnG5.Visible = true;
+            pnG6.Visible = true;
+            pnG7.Visible = true;
+            pnG8.Visible = true;
+
+        }
+
+        private void label36_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

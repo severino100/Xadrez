@@ -143,6 +143,15 @@
             this.Jogador1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.MadeiraComidas = new System.Windows.Forms.Panel();
+            this.label34 = new System.Windows.Forms.Label();
+            this.Comidas = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ComidasBaixo = new System.Windows.Forms.Label();
+            this.jogadasCima = new System.Windows.Forms.Label();
+            this.jogadasBaixo = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sc3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sc1)).BeginInit();
@@ -150,6 +159,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.sb3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sb2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sc2)).BeginInit();
+            this.MadeiraComidas.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnF1
@@ -768,6 +779,7 @@
             this.label33.Size = new System.Drawing.Size(37, 13);
             this.label33.TabIndex = 40;
             this.label33.Text = "Peças";
+            this.label33.Visible = false;
             // 
             // pnB5
             // 
@@ -778,6 +790,7 @@
             this.pnB5.Name = "pnB5";
             this.pnB5.Size = new System.Drawing.Size(52, 52);
             this.pnB5.TabIndex = 1;
+            this.pnB5.Visible = false;
             this.pnB5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnB4
@@ -789,6 +802,7 @@
             this.pnB4.Name = "pnB4";
             this.pnB4.Size = new System.Drawing.Size(52, 52);
             this.pnB4.TabIndex = 1;
+            this.pnB4.Visible = false;
             this.pnB4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnB3
@@ -800,6 +814,7 @@
             this.pnB3.Name = "pnB3";
             this.pnB3.Size = new System.Drawing.Size(52, 52);
             this.pnB3.TabIndex = 1;
+            this.pnB3.Visible = false;
             this.pnB3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnB2
@@ -811,6 +826,7 @@
             this.pnB2.Name = "pnB2";
             this.pnB2.Size = new System.Drawing.Size(52, 52);
             this.pnB2.TabIndex = 1;
+            this.pnB2.Visible = false;
             this.pnB2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnB6
@@ -822,6 +838,7 @@
             this.pnB6.Name = "pnB6";
             this.pnB6.Size = new System.Drawing.Size(52, 52);
             this.pnB6.TabIndex = 1;
+            this.pnB6.Visible = false;
             this.pnB6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnB7
@@ -833,6 +850,7 @@
             this.pnB7.Name = "pnB7";
             this.pnB7.Size = new System.Drawing.Size(52, 52);
             this.pnB7.TabIndex = 1;
+            this.pnB7.Visible = false;
             this.pnB7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnG7
@@ -844,6 +862,7 @@
             this.pnG7.Name = "pnG7";
             this.pnG7.Size = new System.Drawing.Size(52, 52);
             this.pnG7.TabIndex = 1;
+            this.pnG7.Visible = false;
             this.pnG7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnG6
@@ -855,6 +874,7 @@
             this.pnG6.Name = "pnG6";
             this.pnG6.Size = new System.Drawing.Size(52, 52);
             this.pnG6.TabIndex = 1;
+            this.pnG6.Visible = false;
             this.pnG6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnG5
@@ -866,6 +886,7 @@
             this.pnG5.Name = "pnG5";
             this.pnG5.Size = new System.Drawing.Size(52, 52);
             this.pnG5.TabIndex = 1;
+            this.pnG5.Visible = false;
             this.pnG5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnG4
@@ -877,6 +898,7 @@
             this.pnG4.Name = "pnG4";
             this.pnG4.Size = new System.Drawing.Size(52, 52);
             this.pnG4.TabIndex = 1;
+            this.pnG4.Visible = false;
             this.pnG4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnG3
@@ -888,6 +910,7 @@
             this.pnG3.Name = "pnG3";
             this.pnG3.Size = new System.Drawing.Size(52, 52);
             this.pnG3.TabIndex = 1;
+            this.pnG3.Visible = false;
             this.pnG3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnG2
@@ -899,6 +922,7 @@
             this.pnG2.Name = "pnG2";
             this.pnG2.Size = new System.Drawing.Size(52, 52);
             this.pnG2.TabIndex = 1;
+            this.pnG2.Visible = false;
             this.pnG2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnA2
@@ -910,6 +934,7 @@
             this.pnA2.Name = "pnA2";
             this.pnA2.Size = new System.Drawing.Size(52, 52);
             this.pnA2.TabIndex = 1;
+            this.pnA2.Visible = false;
             this.pnA2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnA3
@@ -921,6 +946,7 @@
             this.pnA3.Name = "pnA3";
             this.pnA3.Size = new System.Drawing.Size(52, 52);
             this.pnA3.TabIndex = 1;
+            this.pnA3.Visible = false;
             this.pnA3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnA4
@@ -932,6 +958,7 @@
             this.pnA4.Name = "pnA4";
             this.pnA4.Size = new System.Drawing.Size(52, 52);
             this.pnA4.TabIndex = 1;
+            this.pnA4.Visible = false;
             this.pnA4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnA5
@@ -943,6 +970,7 @@
             this.pnA5.Name = "pnA5";
             this.pnA5.Size = new System.Drawing.Size(52, 52);
             this.pnA5.TabIndex = 1;
+            this.pnA5.Visible = false;
             this.pnA5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnA6
@@ -954,6 +982,7 @@
             this.pnA6.Name = "pnA6";
             this.pnA6.Size = new System.Drawing.Size(52, 52);
             this.pnA6.TabIndex = 1;
+            this.pnA6.Visible = false;
             this.pnA6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnA7
@@ -965,6 +994,7 @@
             this.pnA7.Name = "pnA7";
             this.pnA7.Size = new System.Drawing.Size(52, 52);
             this.pnA7.TabIndex = 1;
+            this.pnA7.Visible = false;
             this.pnA7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnA8
@@ -976,6 +1006,7 @@
             this.pnA8.Name = "pnA8";
             this.pnA8.Size = new System.Drawing.Size(52, 52);
             this.pnA8.TabIndex = 1;
+            this.pnA8.Visible = false;
             this.pnA8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnB8
@@ -987,6 +1018,7 @@
             this.pnB8.Name = "pnB8";
             this.pnB8.Size = new System.Drawing.Size(52, 52);
             this.pnB8.TabIndex = 1;
+            this.pnB8.Visible = false;
             this.pnB8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnG8
@@ -998,6 +1030,7 @@
             this.pnG8.Name = "pnG8";
             this.pnG8.Size = new System.Drawing.Size(52, 52);
             this.pnG8.TabIndex = 2;
+            this.pnG8.Visible = false;
             this.pnG8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnH8
@@ -1009,6 +1042,7 @@
             this.pnH8.Name = "pnH8";
             this.pnH8.Size = new System.Drawing.Size(52, 52);
             this.pnH8.TabIndex = 1;
+            this.pnH8.Visible = false;
             this.pnH8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnH7
@@ -1020,6 +1054,7 @@
             this.pnH7.Name = "pnH7";
             this.pnH7.Size = new System.Drawing.Size(52, 52);
             this.pnH7.TabIndex = 1;
+            this.pnH7.Visible = false;
             this.pnH7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnH6
@@ -1031,6 +1066,7 @@
             this.pnH6.Name = "pnH6";
             this.pnH6.Size = new System.Drawing.Size(52, 52);
             this.pnH6.TabIndex = 1;
+            this.pnH6.Visible = false;
             this.pnH6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnH5
@@ -1042,6 +1078,7 @@
             this.pnH5.Name = "pnH5";
             this.pnH5.Size = new System.Drawing.Size(52, 52);
             this.pnH5.TabIndex = 1;
+            this.pnH5.Visible = false;
             this.pnH5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnH4
@@ -1053,6 +1090,7 @@
             this.pnH4.Name = "pnH4";
             this.pnH4.Size = new System.Drawing.Size(52, 52);
             this.pnH4.TabIndex = 1;
+            this.pnH4.Visible = false;
             this.pnH4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnH3
@@ -1064,6 +1102,7 @@
             this.pnH3.Name = "pnH3";
             this.pnH3.Size = new System.Drawing.Size(52, 52);
             this.pnH3.TabIndex = 1;
+            this.pnH3.Visible = false;
             this.pnH3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnH2
@@ -1075,6 +1114,7 @@
             this.pnH2.Name = "pnH2";
             this.pnH2.Size = new System.Drawing.Size(52, 52);
             this.pnH2.TabIndex = 1;
+            this.pnH2.Visible = false;
             this.pnH2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnA1
@@ -1086,6 +1126,7 @@
             this.pnA1.Name = "pnA1";
             this.pnA1.Size = new System.Drawing.Size(52, 52);
             this.pnA1.TabIndex = 1;
+            this.pnA1.Visible = false;
             this.pnA1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnB1
@@ -1097,6 +1138,7 @@
             this.pnB1.Name = "pnB1";
             this.pnB1.Size = new System.Drawing.Size(52, 52);
             this.pnB1.TabIndex = 1;
+            this.pnB1.Visible = false;
             this.pnB1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnG1
@@ -1108,6 +1150,7 @@
             this.pnG1.Name = "pnG1";
             this.pnG1.Size = new System.Drawing.Size(52, 52);
             this.pnG1.TabIndex = 1;
+            this.pnG1.Visible = false;
             this.pnG1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // pnH1
@@ -1119,6 +1162,7 @@
             this.pnH1.Name = "pnH1";
             this.pnH1.Size = new System.Drawing.Size(52, 52);
             this.pnH1.TabIndex = 0;
+            this.pnH1.Visible = false;
             this.pnH1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnG1_MouseClick);
             // 
             // panel1
@@ -1145,7 +1189,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox1.BackColor = System.Drawing.Color.Maroon;
             this.textBox1.Location = new System.Drawing.Point(33, 58);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(178, 20);
@@ -1173,7 +1217,7 @@
             // 
             // tb1
             // 
-            this.tb1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.tb1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.tb1.Location = new System.Drawing.Point(33, 396);
             this.tb1.Name = "tb1";
             this.tb1.Size = new System.Drawing.Size(178, 20);
@@ -1289,12 +1333,110 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // MadeiraComidas
+            // 
+            this.MadeiraComidas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MadeiraComidas.BackgroundImage")));
+            this.MadeiraComidas.Controls.Add(this.Comidas);
+            this.MadeiraComidas.Location = new System.Drawing.Point(12, 73);
+            this.MadeiraComidas.Name = "MadeiraComidas";
+            this.MadeiraComidas.Size = new System.Drawing.Size(70, 68);
+            this.MadeiraComidas.TabIndex = 42;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(12, 144);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(73, 13);
+            this.label34.TabIndex = 43;
+            this.label34.Text = "Comidas Cima";
+            // 
+            // Comidas
+            // 
+            this.Comidas.AutoSize = true;
+            this.Comidas.BackColor = System.Drawing.Color.Transparent;
+            this.Comidas.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Comidas.Location = new System.Drawing.Point(17, 18);
+            this.Comidas.Name = "Comidas";
+            this.Comidas.Size = new System.Drawing.Size(36, 37);
+            this.Comidas.TabIndex = 44;
+            this.Comidas.Text = "0";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(9, 477);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(76, 13);
+            this.label35.TabIndex = 45;
+            this.label35.Text = "Comidas Baixo";
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.Controls.Add(this.ComidasBaixo);
+            this.panel2.Location = new System.Drawing.Point(9, 406);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(70, 68);
+            this.panel2.TabIndex = 44;
+            // 
+            // ComidasBaixo
+            // 
+            this.ComidasBaixo.AutoSize = true;
+            this.ComidasBaixo.BackColor = System.Drawing.Color.Transparent;
+            this.ComidasBaixo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComidasBaixo.Location = new System.Drawing.Point(17, 18);
+            this.ComidasBaixo.Name = "ComidasBaixo";
+            this.ComidasBaixo.Size = new System.Drawing.Size(36, 37);
+            this.ComidasBaixo.TabIndex = 44;
+            this.ComidasBaixo.Text = "0";
+            // 
+            // jogadasCima
+            // 
+            this.jogadasCima.AutoSize = true;
+            this.jogadasCima.BackColor = System.Drawing.Color.Transparent;
+            this.jogadasCima.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jogadasCima.Location = new System.Drawing.Point(878, 10);
+            this.jogadasCima.Name = "jogadasCima";
+            this.jogadasCima.Size = new System.Drawing.Size(36, 37);
+            this.jogadasCima.TabIndex = 46;
+            this.jogadasCima.Text = "0";
+            // 
+            // jogadasBaixo
+            // 
+            this.jogadasBaixo.AutoSize = true;
+            this.jogadasBaixo.BackColor = System.Drawing.Color.Transparent;
+            this.jogadasBaixo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jogadasBaixo.Location = new System.Drawing.Point(881, 511);
+            this.jogadasBaixo.Name = "jogadasBaixo";
+            this.jogadasBaixo.Size = new System.Drawing.Size(36, 37);
+            this.jogadasBaixo.TabIndex = 47;
+            this.jogadasBaixo.Text = "0";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(598, 511);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(282, 31);
+            this.label36.TabIndex = 48;
+            this.label36.Text = "Jogadas dos Papeis ----";
+            this.label36.Click += new System.EventHandler(this.label36_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(929, 565);
+            this.Controls.Add(this.label36);
+            this.Controls.Add(this.jogadasBaixo);
+            this.Controls.Add(this.jogadasCima);
+            this.Controls.Add(this.label35);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.MadeiraComidas);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.label25);
@@ -1407,6 +1549,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.sb3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sb2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sc2)).EndInit();
+            this.MadeiraComidas.ResumeLayout(false);
+            this.MadeiraComidas.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1528,6 +1674,15 @@
         private System.Windows.Forms.TextBox tb1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel MadeiraComidas;
+        private System.Windows.Forms.Label Comidas;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label ComidasBaixo;
+        private System.Windows.Forms.Label jogadasCima;
+        private System.Windows.Forms.Label jogadasBaixo;
+        private System.Windows.Forms.Label label36;
     }
 }
 
