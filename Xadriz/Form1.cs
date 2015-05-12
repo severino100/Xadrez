@@ -35,11 +35,186 @@ namespace Xadriz
 
         Xeque x = new Xeque();
 
+        //Color cor1, cor2;
+
+        int madeiraComida = 0;
+
         private bool turnos = false;
 
-        public Form1()
+        public Form1(String ccor1, String ccor2)
         {
             InitializeComponent();
+            switch(ccor1)
+            {
+                case "Vermelho": 
+                    pnH1.BackColor = Color.Red;
+                    pnH3.BackColor = Color.Red;
+                    pnH5.BackColor = Color.Red;
+                    pnH7.BackColor = Color.Red;
+
+                    pnG2.BackColor = Color.Red;
+                    pnG4.BackColor = Color.Red;
+                    pnG6.BackColor = Color.Red;
+                    pnG8.BackColor = Color.Red;
+
+                    pnF1.BackColor = Color.Red;
+                    pnF3.BackColor = Color.Red;
+                    pnF5.BackColor = Color.Red;
+                    pnF7.BackColor = Color.Red;
+
+                    pnE2.BackColor = Color.Red;
+                    pnE4.BackColor = Color.Red;
+                    pnE6.BackColor = Color.Red;
+                    pnE8.BackColor = Color.Red;
+
+                    pnD1.BackColor = Color.Red;
+                    pnD3.BackColor = Color.Red;
+                    pnD5.BackColor = Color.Red;
+                    pnD7.BackColor = Color.Red;
+
+                    pnC2.BackColor = Color.Red;
+                    pnC4.BackColor = Color.Red;
+                    pnC6.BackColor = Color.Red;
+                    pnC8.BackColor = Color.Red;
+
+                    pnB1.BackColor = Color.Red;
+                    pnB3.BackColor = Color.Red;
+                    pnB5.BackColor = Color.Red;
+                    pnB7.BackColor = Color.Red;
+
+                    pnA2.BackColor = Color.Red;
+                    pnA4.BackColor = Color.Red;
+                    pnA6.BackColor = Color.Red;
+                    pnA8.BackColor = Color.Red;
+                    break;
+
+
+                case "Amarelo": pnH1.BackColor = Color.Yellow;
+                    pnH3.BackColor = Color.Yellow;
+                    pnH5.BackColor = Color.Yellow;
+                    pnH7.BackColor = Color.Yellow;
+
+                    pnG2.BackColor = Color.Yellow;
+                    pnG4.BackColor = Color.Yellow;
+                    pnG6.BackColor = Color.Yellow;
+                    pnG8.BackColor = Color.Yellow;
+
+                    pnF1.BackColor = Color.Yellow;
+                    pnF3.BackColor = Color.Yellow;
+                    pnF5.BackColor = Color.Yellow;
+                    pnF7.BackColor = Color.Yellow;
+
+                    pnE2.BackColor = Color.Yellow;
+                    pnE4.BackColor = Color.Yellow;
+                    pnE6.BackColor = Color.Yellow;
+                    pnE8.BackColor = Color.Yellow;
+
+                    pnD1.BackColor = Color.Yellow;
+                    pnD3.BackColor = Color.Yellow;
+                    pnD5.BackColor = Color.Yellow;
+                    pnD7.BackColor = Color.Yellow;
+
+                    pnC2.BackColor = Color.Yellow;
+                    pnC4.BackColor = Color.Yellow;
+                    pnC6.BackColor = Color.Yellow;
+                    pnC8.BackColor = Color.Yellow;
+
+                    pnB1.BackColor = Color.Yellow;
+                    pnB3.BackColor = Color.Yellow;
+                    pnB5.BackColor = Color.Yellow;
+                    pnB7.BackColor = Color.Yellow;
+
+                    pnA2.BackColor = Color.Yellow;
+                    pnA4.BackColor = Color.Yellow;
+                    pnA6.BackColor = Color.Yellow;
+                    pnA8.BackColor = Color.Yellow;
+                    break;
+
+
+                case "Azul": 
+                    pnH1.BackColor = Color.Blue;
+                    pnH3.BackColor = Color.Blue;
+                    pnH5.BackColor = Color.Blue;
+                    pnH7.BackColor = Color.Blue;
+
+                    pnG2.BackColor = Color.Blue;
+                    pnG4.BackColor = Color.Blue;
+                    pnG6.BackColor = Color.Blue;
+                    pnG8.BackColor = Color.Blue;
+
+                    pnF1.BackColor = Color.Blue;
+                    pnF3.BackColor = Color.Blue;
+                    pnF5.BackColor = Color.Blue;
+                    pnF7.BackColor = Color.Blue;
+
+                    pnE2.BackColor = Color.Blue;
+                    pnE4.BackColor = Color.Blue;
+                    pnE6.BackColor = Color.Blue;
+                    pnE8.BackColor = Color.Blue;
+
+                    pnD1.BackColor = Color.Blue;
+                    pnD3.BackColor = Color.Blue;
+                    pnD5.BackColor = Color.Blue;
+                    pnD7.BackColor = Color.Blue;
+
+                    pnC2.BackColor = Color.Blue;
+                    pnC4.BackColor = Color.Blue;
+                    pnC6.BackColor = Color.Blue;
+                    pnC8.BackColor = Color.Blue;
+
+                    pnB1.BackColor = Color.Blue;
+                    pnB3.BackColor = Color.Blue;
+                    pnB5.BackColor = Color.Blue;
+                    pnB7.BackColor = Color.Blue;
+
+                    pnA2.BackColor = Color.Blue;
+                    pnA4.BackColor = Color.Blue;
+                    pnA6.BackColor = Color.Blue;
+                    pnA8.BackColor = Color.Blue;
+                    break;
+
+                case "Verde": pnH1.BackColor = Color.Green;
+                    pnH3.BackColor = Color.Green;
+                    pnH5.BackColor = Color.Green;
+                    pnH7.BackColor = Color.Green;
+
+                    pnG2.BackColor = Color.Green;
+                    pnG4.BackColor = Color.Green;
+                    pnG6.BackColor = Color.Green;
+                    pnG8.BackColor = Color.Green;
+
+                    pnF1.BackColor = Color.Green;
+                    pnF3.BackColor = Color.Green;
+                    pnF5.BackColor = Color.Green;
+                    pnF7.BackColor = Color.Green;
+
+                    pnE2.BackColor = Color.Green;
+                    pnE4.BackColor = Color.Green;
+                    pnE6.BackColor = Color.Green;
+                    pnE8.BackColor = Color.Green;
+
+                    pnD1.BackColor = Color.Green;
+                    pnD3.BackColor = Color.Green;
+                    pnD5.BackColor = Color.Green;
+                    pnD7.BackColor = Color.Green;
+
+                    pnC2.BackColor = Color.Green;
+                    pnC4.BackColor = Color.Green;
+                    pnC6.BackColor = Color.Green;
+                    pnC8.BackColor = Color.Green;
+
+                    pnB1.BackColor = Color.Green;
+                    pnB3.BackColor = Color.Green;
+                    pnB5.BackColor = Color.Green;
+                    pnB7.BackColor = Color.Green;
+
+                    pnA2.BackColor = Color.Green;
+                    pnA4.BackColor = Color.Green;
+                    pnA6.BackColor = Color.Green;
+                    pnA8.BackColor = Color.Green;
+                    break;
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -212,7 +387,7 @@ namespace Xadriz
             pnF8.Name = "Vazio";
 
 
-
+         
 
         }
 
@@ -247,12 +422,12 @@ namespace Xadriz
                             {
                                 if (((Panel)sender).Name != "Vazio")
                                 {
-                                    Comidas.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                    madeiraComida++;
+                                    Comidas.Text = "" + madeiraComida;
                                 }
-                                if (((Panel)sender).Name == "Vazio")
-                                {
-                                    jogadasCima.Text = "" + (Int32.Parse(Comidas.Text) + 1);
-                                }
+                               
+                                jogadasCima.Text = "" + (Int32.Parse(jogadasCima.Text) + 1);
+                                
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -287,12 +462,12 @@ namespace Xadriz
                             {
                                 if (((Panel)sender).Name != "Vazio")
                                 {
-                                    ComidasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                    madeiraComida++;
+                                    ComidasBaixo.Text = "" + madeiraComida;
                                 }
-                                if (((Panel)sender).Name == "Vazio")
-                                {
-                                    jogadasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
-                                }
+
+                                jogadasBaixo.Text = "" + (Int32.Parse(jogadasBaixo.Text) + 1);
+                               
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -325,12 +500,12 @@ namespace Xadriz
                             {
                                 if (((Panel)sender).Name != "Vazio")
                                 {
-                                    Comidas.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                    madeiraComida++;
+                                    Comidas.Text = "" + madeiraComida;
                                 }
-                                if (((Panel)sender).Name == "Vazio")
-                                {
-                                    jogadasCima.Text = "" + (Int32.Parse(Comidas.Text) + 1);
-                                }
+
+                                jogadasCima.Text = "" + (Int32.Parse(jogadasCima.Text) + 1);
+                                
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -359,12 +534,12 @@ namespace Xadriz
                             {
                                 if (((Panel)sender).Name != "Vazio")
                                 {
-                                    ComidasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                    madeiraComida++;
+                                    ComidasBaixo.Text = "" + madeiraComida;
                                 }
-                                if (((Panel)sender).Name == "Vazio")
-                                {
-                                    jogadasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
-                                }
+
+                                jogadasBaixo.Text = "" + (Int32.Parse(jogadasBaixo.Text) + 1);
+                               
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -393,12 +568,12 @@ namespace Xadriz
                             {
                                 if (((Panel)sender).Name != "Vazio")
                                 {
-                                    Comidas.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                    madeiraComida++;
+                                    Comidas.Text = "" + madeiraComida;
                                 }
-                                if (((Panel)sender).Name == "Vazio")
-                                {
-                                    jogadasCima.Text = "" + (Int32.Parse(Comidas.Text) + 1);
-                                }
+
+                                jogadasCima.Text = "" + (Int32.Parse(jogadasCima.Text) + 1);
+                               
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -427,12 +602,12 @@ namespace Xadriz
                             {
                                 if (((Panel)sender).Name != "Vazio")
                                 {
-                                    ComidasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                    madeiraComida++;
+                                    ComidasBaixo.Text = "" + madeiraComida;
                                 }
-                                if (((Panel)sender).Name == "Vazio")
-                                {
-                                    jogadasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
-                                }
+
+                                jogadasBaixo.Text = "" + (Int32.Parse(jogadasBaixo.Text) + 1);
+                                
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -462,12 +637,12 @@ namespace Xadriz
                             {
                                 if (((Panel)sender).Name != "Vazio")
                                 {
-                                    Comidas.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                    madeiraComida++;
+                                    Comidas.Text = "" + madeiraComida;
                                 }
-                                if (((Panel)sender).Name == "Vazio")
-                                {
-                                    jogadasCima.Text = "" + (Int32.Parse(Comidas.Text) + 1);
-                                }
+
+                                jogadasCima.Text = "" + (Int32.Parse(jogadasCima.Text) + 1);
+                              
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -497,12 +672,12 @@ namespace Xadriz
                             {
                                 if (((Panel)sender).Name != "Vazio")
                                 {
-                                    ComidasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                    madeiraComida++;
+                                    ComidasBaixo.Text = "" + madeiraComida;
                                 }
-                                if (((Panel)sender).Name == "Vazio")
-                                {
-                                    jogadasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
-                                }
+
+                                jogadasBaixo.Text = "" + (Int32.Parse(jogadasBaixo.Text) + 1);
+                               
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -532,12 +707,12 @@ namespace Xadriz
                             {
                                 if (((Panel)sender).Name != "Vazio")
                                 {
-                                    Comidas.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                    madeiraComida++;
+                                    Comidas.Text = "" + madeiraComida;
                                 }
-                                if (((Panel)sender).Name == "Vazio")
-                                {
-                                    jogadasCima.Text = "" + (Int32.Parse(Comidas.Text) + 1);
-                                }
+
+                                jogadasCima.Text = "" + (Int32.Parse(jogadasCima.Text) + 1);
+                                
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -567,12 +742,12 @@ namespace Xadriz
                             {
                                 if (((Panel)sender).Name != "Vazio")
                                 {
-                                    ComidasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                    madeiraComida++;
+                                    ComidasBaixo.Text = "" + madeiraComida;
                                 }
-                                if (((Panel)sender).Name == "Vazio")
-                                {
-                                    jogadasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
-                                }
+
+                                jogadasBaixo.Text = "" + (Int32.Parse(jogadasBaixo.Text) + 1);
+                          
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -602,12 +777,12 @@ namespace Xadriz
                             {
                                 if (((Panel)sender).Name != "Vazio")
                                 {
-                                    Comidas.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                    madeiraComida++;
+                                    Comidas.Text = "" + madeiraComida;
                                 }
-                                if (((Panel)sender).Name == "Vazio")
-                                {
-                                    jogadasCima.Text = "" + (Int32.Parse(Comidas.Text) + 1);
-                                }
+
+                                jogadasCima.Text = "" + (Int32.Parse(jogadasCima.Text) + 1);
+                            
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";
@@ -637,12 +812,12 @@ namespace Xadriz
                             {
                                 if (((Panel)sender).Name != "Vazio")
                                 {
-                                    ComidasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
+                                    madeiraComida++;
+                                    ComidasBaixo.Text = "" + madeiraComida;
                                 }
-                                if (((Panel)sender).Name == "Vazio")
-                                {
-                                    jogadasBaixo.Text = "" + (Int32.Parse(Comidas.Text) + 1);
-                                }
+
+                                jogadasBaixo.Text = "" + (Int32.Parse(jogadasBaixo.Text) + 1);
+                                
                                 ((Panel)sender).BackgroundImage = selecionado.BackgroundImage;
                                 ((Panel)sender).Name = selecionado.Name;
                                 selecionado.Name = "Vazio";

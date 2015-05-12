@@ -46,6 +46,12 @@
   <ItemGroup>
     <Compile Include="Bispo.cs" />
     <Compile Include="Cavalo.cs" />
+    <Compile Include="EscolherCor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EscolherCor.Designer.cs">
+      <DependentUpon>EscolherCor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Rei.cs" />
     <Compile Include="Torre.cs" />
     <Compile Include="Xeque.cs" />
+    <EmbeddedResource Include="EscolherCor.resx">
+      <DependentUpon>EscolherCor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
