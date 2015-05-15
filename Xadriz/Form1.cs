@@ -132,45 +132,45 @@ namespace Xadriz
 
 
                 case "Azul": 
-                    pnH1.BackColor = Color.Blue;
-                    pnH3.BackColor = Color.Blue;
-                    pnH5.BackColor = Color.Blue;
-                    pnH7.BackColor = Color.Blue;
+                    pnG1.BackColor = Color.Blue;
+                    pnG3.BackColor = Color.Blue;
+                    pnG5.BackColor = Color.Blue;
+                    pnG7.BackColor = Color.Blue;
 
-                    pnG2.BackColor = Color.Blue;
-                    pnG4.BackColor = Color.Blue;
-                    pnG6.BackColor = Color.Blue;
-                    pnG8.BackColor = Color.Blue;
+                    pnH2.BackColor = Color.Blue;
+                    pnH4.BackColor = Color.Blue;
+                    pnH6.BackColor = Color.Blue;
+                    pnH8.BackColor = Color.Blue;
 
-                    pnF1.BackColor = Color.Blue;
-                    pnF3.BackColor = Color.Blue;
-                    pnF5.BackColor = Color.Blue;
-                    pnF7.BackColor = Color.Blue;
+                    pnE1.BackColor = Color.Blue;
+                    pnE3.BackColor = Color.Blue;
+                    pnE5.BackColor = Color.Blue;
+                    pnE7.BackColor = Color.Blue;
 
-                    pnE2.BackColor = Color.Blue;
-                    pnE4.BackColor = Color.Blue;
-                    pnE6.BackColor = Color.Blue;
-                    pnE8.BackColor = Color.Blue;
+                    pnF2.BackColor = Color.Blue;
+                    pnF4.BackColor = Color.Blue;
+                    pnF6.BackColor = Color.Blue;
+                    pnF8.BackColor = Color.Blue;
 
-                    pnD1.BackColor = Color.Blue;
-                    pnD3.BackColor = Color.Blue;
-                    pnD5.BackColor = Color.Blue;
-                    pnD7.BackColor = Color.Blue;
+                    pnC1.BackColor = Color.Blue;
+                    pnC3.BackColor = Color.Blue;
+                    pnC5.BackColor = Color.Blue;
+                    pnC7.BackColor = Color.Blue;
 
-                    pnC2.BackColor = Color.Blue;
-                    pnC4.BackColor = Color.Blue;
-                    pnC6.BackColor = Color.Blue;
-                    pnC8.BackColor = Color.Blue;
+                    pnD2.BackColor = Color.Blue;
+                    pnD4.BackColor = Color.Blue;
+                    pnD6.BackColor = Color.Blue;
+                    pnD8.BackColor = Color.Blue;
 
-                    pnB1.BackColor = Color.Blue;
-                    pnB3.BackColor = Color.Blue;
-                    pnB5.BackColor = Color.Blue;
-                    pnB7.BackColor = Color.Blue;
+                    pnA1.BackColor = Color.Blue;
+                    pnA3.BackColor = Color.Blue;
+                    pnA5.BackColor = Color.Blue;
+                    pnA7.BackColor = Color.Blue;
 
-                    pnA2.BackColor = Color.Blue;
-                    pnA4.BackColor = Color.Blue;
-                    pnA6.BackColor = Color.Blue;
-                    pnA8.BackColor = Color.Blue;
+                    pnB2.BackColor = Color.Blue;
+                    pnB4.BackColor = Color.Blue;
+                    pnB6.BackColor = Color.Blue;
+                    pnB8.BackColor = Color.Blue;
                     break;
 
                 case "Verde": pnH1.BackColor = Color.Green;
@@ -215,6 +215,177 @@ namespace Xadriz
                     break;
             }
 
+
+            switch (ccor2)
+            {
+                case "Vermelho":
+                    pnG1.BackColor = Color.Red;
+                    pnG3.BackColor = Color.Red;
+                    pnG5.BackColor = Color.Red;
+                    pnG7.BackColor = Color.Red;
+
+                    pnH2.BackColor = Color.Red;
+                    pnH4.BackColor = Color.Red;
+                    pnH6.BackColor = Color.Red;
+                    pnH8.BackColor = Color.Red;
+
+                    pnE1.BackColor = Color.Red;
+                    pnE3.BackColor = Color.Red;
+                    pnE5.BackColor = Color.Red;
+                    pnE7.BackColor = Color.Red;
+
+                    pnF2.BackColor = Color.Red;
+                    pnF4.BackColor = Color.Red;
+                    pnF6.BackColor = Color.Red;
+                    pnF8.BackColor = Color.Red;
+
+                    pnC1.BackColor = Color.Red;
+                    pnC3.BackColor = Color.Red;
+                    pnC5.BackColor = Color.Red;
+                    pnC7.BackColor = Color.Red;
+
+                    pnD2.BackColor = Color.Red;
+                    pnD4.BackColor = Color.Red;
+                    pnD6.BackColor = Color.Red;
+                    pnD8.BackColor = Color.Red;
+
+                    pnA1.BackColor = Color.Red;
+                    pnA3.BackColor = Color.Red;
+                    pnA5.BackColor = Color.Red;
+                    pnA7.BackColor = Color.Red;
+
+                    pnB2.BackColor = Color.Red;
+                    pnB4.BackColor = Color.Red;
+                    pnB6.BackColor = Color.Red;
+                    pnB8.BackColor = Color.Red;
+                    break;
+
+
+                case "Amarelo": pnG1.BackColor = Color.Yellow;
+                    pnG3.BackColor = Color.Yellow;
+                    pnG5.BackColor = Color.Yellow;
+                    pnG7.BackColor = Color.Yellow;
+
+                    pnH2.BackColor = Color.Yellow;
+                    pnH4.BackColor = Color.Yellow;
+                    pnH6.BackColor = Color.Yellow;
+                    pnH8.BackColor = Color.Yellow;
+
+                    pnE1.BackColor = Color.Yellow;
+                    pnE3.BackColor = Color.Yellow;
+                    pnE5.BackColor = Color.Yellow;
+                    pnE7.BackColor = Color.Yellow;
+
+                    pnF2.BackColor = Color.Yellow;
+                    pnF4.BackColor = Color.Yellow;
+                    pnF6.BackColor = Color.Yellow;
+                    pnF8.BackColor = Color.Yellow;
+
+                    pnC1.BackColor = Color.Yellow;
+                    pnC3.BackColor = Color.Yellow;
+                    pnC5.BackColor = Color.Yellow;
+                    pnC7.BackColor = Color.Yellow;
+
+                    pnD2.BackColor = Color.Yellow;
+                    pnD4.BackColor = Color.Yellow;
+                    pnD6.BackColor = Color.Yellow;
+                    pnD8.BackColor = Color.Yellow;
+
+                    pnA1.BackColor = Color.Yellow;
+                    pnA3.BackColor = Color.Yellow;
+                    pnA5.BackColor = Color.Yellow;
+                    pnA7.BackColor = Color.Yellow;
+
+                    pnB2.BackColor = Color.Yellow;
+                    pnB4.BackColor = Color.Yellow;
+                    pnB6.BackColor = Color.Yellow;
+                    pnB8.BackColor = Color.Yellow;
+                    break;
+
+
+                case "Azul":
+                    pnH1.BackColor = Color.Blue;
+                    pnH3.BackColor = Color.Blue;
+                    pnH5.BackColor = Color.Blue;
+                    pnH7.BackColor = Color.Blue;
+
+                    pnG2.BackColor = Color.Blue;
+                    pnG4.BackColor = Color.Blue;
+                    pnG6.BackColor = Color.Blue;
+                    pnG8.BackColor = Color.Blue;
+
+                    pnF1.BackColor = Color.Blue;
+                    pnF3.BackColor = Color.Blue;
+                    pnF5.BackColor = Color.Blue;
+                    pnF7.BackColor = Color.Blue;
+
+                    pnE2.BackColor = Color.Blue;
+                    pnE4.BackColor = Color.Blue;
+                    pnE6.BackColor = Color.Blue;
+                    pnE8.BackColor = Color.Blue;
+
+                    pnD1.BackColor = Color.Blue;
+                    pnD3.BackColor = Color.Blue;
+                    pnD5.BackColor = Color.Blue;
+                    pnD7.BackColor = Color.Blue;
+
+                    pnC2.BackColor = Color.Blue;
+                    pnC4.BackColor = Color.Blue;
+                    pnC6.BackColor = Color.Blue;
+                    pnC8.BackColor = Color.Blue;
+
+                    pnB1.BackColor = Color.Blue;
+                    pnB3.BackColor = Color.Blue;
+                    pnB5.BackColor = Color.Blue;
+                    pnB7.BackColor = Color.Blue;
+
+                    pnA2.BackColor = Color.Blue;
+                    pnA4.BackColor = Color.Blue;
+                    pnA6.BackColor = Color.Blue;
+                    pnA8.BackColor = Color.Blue;
+                    break;
+
+                case "Verde": pnG1.BackColor = Color.Green;
+                    pnG3.BackColor = Color.Green;
+                    pnG5.BackColor = Color.Green;
+                    pnG7.BackColor = Color.Green;
+
+                    pnH2.BackColor = Color.Green;
+                    pnH4.BackColor = Color.Green;
+                    pnH6.BackColor = Color.Green;
+                    pnH8.BackColor = Color.Green;
+
+                    pnE1.BackColor = Color.Green;
+                    pnE3.BackColor = Color.Green;
+                    pnE5.BackColor = Color.Green;
+                    pnE7.BackColor = Color.Green;
+
+                    pnF2.BackColor = Color.Green;
+                    pnF4.BackColor = Color.Green;
+                    pnF6.BackColor = Color.Green;
+                    pnF8.BackColor = Color.Green;
+
+                    pnC1.BackColor = Color.Green;
+                    pnC3.BackColor = Color.Green;
+                    pnC5.BackColor = Color.Green;
+                    pnC7.BackColor = Color.Green;
+
+                    pnD2.BackColor = Color.Green;
+                    pnD4.BackColor = Color.Green;
+                    pnD6.BackColor = Color.Green;
+                    pnD8.BackColor = Color.Green;
+
+                    pnA1.BackColor = Color.Green;
+                    pnA3.BackColor = Color.Green;
+                    pnA5.BackColor = Color.Green;
+                    pnA7.BackColor = Color.Green;
+
+                    pnB2.BackColor = Color.Green;
+                    pnB4.BackColor = Color.Green;
+                    pnB6.BackColor = Color.Green;
+                    pnB8.BackColor = Color.Green;
+                    break;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -1034,6 +1205,11 @@ namespace Xadriz
         }
 
         private void label36_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label37_Click(object sender, EventArgs e)
         {
 
         }

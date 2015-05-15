@@ -59,8 +59,11 @@ namespace Xadriz
                 case "Azul": pn2.BackColor = Color.Blue;
                     pn3.BackColor = Color.Blue;
                     break;
-                case "Verde": pn2.BackColor = Color.Red;
-                    pn3.BackColor = Color.Red;
+                case "Verde": pn2.BackColor = Color.Green;
+                    pn3.BackColor = Color.Green;
+                    pn3.BackColor = Color.Green;
+                    pn3.BackColor = Color.Green;
+                    pn3.BackColor = Color.Green;
                     break;
             }
         }

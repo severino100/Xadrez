@@ -144,14 +144,15 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.MadeiraComidas = new System.Windows.Forms.Panel();
-            this.label34 = new System.Windows.Forms.Label();
             this.Comidas = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ComidasBaixo = new System.Windows.Forms.Label();
             this.jogadasCima = new System.Windows.Forms.Label();
             this.jogadasBaixo = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sc3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sc1)).BeginInit();
@@ -1342,15 +1343,6 @@
             this.MadeiraComidas.Size = new System.Drawing.Size(70, 68);
             this.MadeiraComidas.TabIndex = 42;
             // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(12, 144);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(73, 13);
-            this.label34.TabIndex = 43;
-            this.label34.Text = "Comidas Cima";
-            // 
             // Comidas
             // 
             this.Comidas.AutoSize = true;
@@ -1361,6 +1353,15 @@
             this.Comidas.Size = new System.Drawing.Size(36, 37);
             this.Comidas.TabIndex = 44;
             this.Comidas.Text = "0";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(12, 144);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(73, 13);
+            this.label34.TabIndex = 43;
+            this.label34.Text = "Comidas Cima";
             // 
             // label35
             // 
@@ -1424,12 +1425,24 @@
             this.label36.Text = "Jogadas dos Papeis ----";
             this.label36.Click += new System.EventHandler(this.label36_Click);
             // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(578, 10);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(302, 31);
+            this.label37.TabIndex = 49;
+            this.label37.Text = "Jogadas dos Madeira ----";
+            this.label37.Click += new System.EventHandler(this.label37_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(929, 565);
+            this.Controls.Add(this.label37);
             this.Controls.Add(this.label36);
             this.Controls.Add(this.jogadasBaixo);
             this.Controls.Add(this.jogadasCima);
@@ -1683,6 +1696,7 @@
         private System.Windows.Forms.Label jogadasCima;
         private System.Windows.Forms.Label jogadasBaixo;
         private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
     }
 }
 
