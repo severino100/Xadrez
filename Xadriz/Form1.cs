@@ -1038,19 +1038,50 @@ namespace Xadriz
         }
         static void SerializeWithBinaryFormat(Object obj, SaveFileDialog fileLocation)
         {
-            Stream streamToFile = File.OpenWrite(fileLocation.FileName);         //
-            BinaryFormatter bf = new BinaryFormatter();                 //
-            bf.Serialize(streamToFile, obj);                            //
-            streamToFile.Close();                                       //
+            try{
+                Stream streamToFile = File.OpenWrite(fileLocation.FileName);         //
+                BinaryFormatter bf = new BinaryFormatter();                 //
+                bf.Serialize(streamToFile, obj);                            //
+                streamToFile.Close();             
+            }
+            catch(System.ArgumentNullException)
+            {
+                MessageBox.Show("O ficheiro nao pode ser vazio");
+            }
+            catch (System.Runtime.Serialization.SerializationException)
+            {
+                MessageBox.Show("O ficheiro nao pode ser vazio");
+            }
+            catch (System.Security.SecurityException)
+            {
+                MessageBox.Show("O ficheiro nao pode ser vazio");
+            }//
         }
 
         static Object DeserializeWithBinaryFormatter(OpenFileDialog fileLocation)
         {
-            Stream streamFromFile = File.OpenRead(fileLocation.FileName);       //
-            BinaryFormatter bf = new BinaryFormatter();                 //
-            Object obj = bf.Deserialize(streamFromFile);                //
-            streamFromFile.Close();                                     //
-            return obj;                                                 //
+            /*try
+            {*/
+                Stream streamFromFile = File.OpenRead(fileLocation.FileName);       //
+                BinaryFormatter bf = new BinaryFormatter();                 //
+                Object obj = bf.Deserialize(streamFromFile);                //
+                streamFromFile.Close();                                     //
+                return obj;   
+            /*}
+            catch(System.ArgumentNullException)
+            {
+                MessageBox.Show("O ficheiro nao pode ser vazio");
+            }
+            catch (System.Runtime.Serialization.SerializationException)
+            {
+                MessageBox.Show("O ficheiro nao pode ser vazio");
+            }
+            catch (System.Security.SecurityException)
+            {
+                MessageBox.Show("O ficheiro nao pode ser vazio");
+            }
+            */
+                                                          //
         }
 
         private void save_Click(object sender, EventArgs e)
@@ -1067,11 +1098,17 @@ namespace Xadriz
 
         private void read_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "chess(dados do jogo currente) | *.chess";
-            openFileDialog1.FileName = "meuJogo";
-            openFileDialog1.ShowDialog();
-            g = (Guardar)DeserializeWithBinaryFormatter(openFileDialog1);//objeto save
-            pecas = g.devolver(pecas);
+            try{
+                openFileDialog1.Filter = "chess(dados do jogo currente) | *.chess";
+                openFileDialog1.FileName = "meuJogo";
+                openFileDialog1.ShowDialog();
+                g = (Guardar)DeserializeWithBinaryFormatter(openFileDialog1);//objeto save
+                pecas = g.devolver(pecas);
+            }
+            catch (System.IO.FileNotFoundException erro)
+            {
+                MessageBox.Show("Voltar ao jogo?");
+            }
 
             foreach(Panel peca in pecas)
             {

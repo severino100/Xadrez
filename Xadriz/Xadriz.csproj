@@ -67,6 +67,7 @@
     <Compile Include="Rei.cs" />
     <Compile Include="Torre.cs" />
     <Compile Include="Xeque.cs" />
+    <Compile Include="XequeMate.cs" />
     <EmbeddedResource Include="EscolherCor.resx">
       <DependentUpon>EscolherCor.cs</DependentUpon>
     </EmbeddedResource>
