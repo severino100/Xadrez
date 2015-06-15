@@ -20,7 +20,7 @@ namespace Xadriz
                     simili.Location = partida.Location;
                     simili.Name = partida.Name;
                     partida.Name = "Vazio";
-                }
+                 }
             }*/
 
             foreach (Panel rei in pecas)
